@@ -3,6 +3,7 @@ import { AnalyticsService } from 'src/app/shared/analytics.service';
 
 @Component({
   selector: 'app-details',
+  standalone: true,
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.css'],
 })

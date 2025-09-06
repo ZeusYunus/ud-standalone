@@ -1,9 +1,9 @@
 import { enableProdMode } from '@angular/core';
-
-import { environment } from './environments/environment';
 import { bootstrapApplication } from '@angular/platform-browser';
+
 import { AppComponent } from './app/app.component';
-import { AnalyticsService } from './app/shared/analytics.service';
+// import { AnalyticsService } from './app/shared/analytics.service';
+import { environment } from './environments/environment';
 
 if (environment.production) {
   enableProdMode();
@@ -11,6 +11,6 @@ if (environment.production) {
 
 bootstrapApplication(AppComponent, {
   providers: [
-    // AnalyticsService
-  ]
+    // AnalyticsService,
+  ],
 });

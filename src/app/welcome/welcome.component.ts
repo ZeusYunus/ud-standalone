@@ -3,7 +3,8 @@ import { DetailsComponent } from './details/details.component';
 
 @Component({
   selector: 'app-welcome',
-  // imports: [DetailsComponent],
+  standalone: true,
+  imports: [DetailsComponent],
   templateUrl: './welcome.component.html'
 })
 export class WelcomeComponent {}
